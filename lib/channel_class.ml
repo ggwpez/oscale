@@ -65,8 +65,8 @@ class ['a] channel inner = object
   method read =
     Fiber.first
       (* The order matters! Check if its closed LAST. *)
-			(fun () ->
-				Ok (Stream.take inner.stream))
+      (fun () ->
+        Ok (Stream.take inner.stream))
       (fun () ->
         Promise.await inner.closed;
         Error Closed)
