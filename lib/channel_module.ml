@@ -1,7 +1,7 @@
 open Base
 open Stdlib
 
-(** Unidirectional channel for thread-safe communication. Can be closed by either side. *)
+(** Unidirectional channel for thread-safe communication. *)
 module Channel = struct
 	open Eio
 
