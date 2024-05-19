@@ -1,0 +1,6 @@
+(library
+ (name oscale)
+ (libraries eio eio_main base stdio ppxlib riot)
+  (kind ppx_deriver)
+  (inline_tests)
+  (preprocess (pps ppx_inline_test ppx_assert)))

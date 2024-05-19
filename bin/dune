@@ -1,0 +1,4 @@
+(executable
+ (public_name oscale)
+ (name main)
+ (libraries oscale eio_main))
