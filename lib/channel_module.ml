@@ -22,7 +22,7 @@ module Channel = struct
 		mutable closed: unit Promise.t
 	}
 
-	(** Close handler of a channel. Can only be constructed from a Writer. *)
+	(** Close handle of a channel. Can only be constructed from a Writer. *)
 	type 'a closer = C of 'a writer
 
 	(** Create a channel from an [EIO.Stream.t] *)
